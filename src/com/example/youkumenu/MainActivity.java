@@ -88,7 +88,8 @@ public class MainActivity extends Activity implements OnClickListener {
 				secondFrameState=!secondFrameState;
 				thirdFrameState=!thirdFrameState;
 			}
+			return false;
 		}
-		return false;
+		return super.onKeyDown(keyCode, event);
 	}
 }
