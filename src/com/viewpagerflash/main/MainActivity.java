@@ -4,6 +4,9 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import com.gc.flashview.effect.CubeTransformer;
+
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -108,6 +111,7 @@ public class MainActivity extends Activity implements OnPageChangeListener {
 			scroller.setmDuration(1000);
 		} catch (Exception e) {
 		}
+		viewPager.setPageTransformer(true, new CubeTransformer());//…Ë÷√ViewPager«–ªª–ßπ˚
 		int firstPosition=50000-50000%imageViewList.size();
 		viewPager.setCurrentItem(firstPosition);
 		if (flashThread==null) {
