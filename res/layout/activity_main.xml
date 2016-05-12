@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res/com.togglebutton.main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.togglebutton.main.MainActivity" >
+    
+    <com.togglebutton.main.MyButton
+        android:id="@+id/btnToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" 
+        toggle:backResource="@drawable/switch_background"
+        toggle:slidResource="@drawable/slide_button"
+        toggle:toggleState="false"
+        />
+
+</RelativeLayout>
