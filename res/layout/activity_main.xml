@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.slipmenu.main.MainActivity" >
+
+    <com.slipmenu.main.SlipMenu
+        android:id="@+id/slipMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        >
+        <include layout="@layout/activity_menu"/>
+        <include layout="@layout/menu_main"/>
+    </com.slipmenu.main.SlipMenu>
+</RelativeLayout>
